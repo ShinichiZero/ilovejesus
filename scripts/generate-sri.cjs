@@ -65,25 +65,35 @@ function findMatchFor(src) {
 }
 
 // Add integrity to <script src=...>
-html = html.replace(/<script\b([^>]*)\bsrc=("|')([^"']+)("|')(.*?)>/gi, (m, before, q1, src) => {
-  if (/integrity=/.test(m)) return m;
+html = html.replace(/<script\b([^>]*)\bsrc=("|')([^"']+)\2([^>]*)>/gi, (m, before, q1, src, after) => {
+  if (/\bintegrity=/.test(m)) return m;
   const match = findMatchFor(src);
   if (!match) return m;
-  const injected = `<script${before} src=${q1}${src}${q1} integrity="${match.integrity}" crossorigin="anonymous">`;
-  return injected;
+  // Strip any existing bare or valued crossorigin attributes to avoid duplicates
+  const stripCrossorigin = (s) => s.replace(/\s*\bcrossorigin(?:=(?:"[^"]*"|'[^']*'|\S+))?\b/gi, '');
+  const cleanBefore = stripCrossorigin(before).trim();
+  const cleanAfter = stripCrossorigin(after).trim();
+  const parts = ['<script'];
+  if (cleanBefore) parts.push(` ${cleanBefore}`);
+  parts.push(` src=${q1}${src}${q1}`);
+  if (cleanAfter) parts.push(` ${cleanAfter}`);
+  parts.push(` integrity="${match.integrity}" crossorigin="anonymous">`);
+  return parts.join('');
 });
 
 // Add integrity to <link rel="stylesheet" href=...>
-html = html.replace(/<link\b([^>]*)>/gi, (m) => {
+html = html.replace(/<link\b([^>]*)>/gi, (m, attrs) => {
   if (!/rel=("|')stylesheet\1/.test(m)) return m;
-  if (/integrity=/.test(m)) return m;
-  const hrefMatch = m.match(/href=("|')([^"']+)("|')/i);
+  if (/\bintegrity=/.test(m)) return m;
+  const hrefMatch = m.match(/href=("|')([^"']+)\1/i);
   if (!hrefMatch) return m;
   const src = hrefMatch[2];
   const match = findMatchFor(src);
   if (!match) return m;
-  // inject before closing /> or >
-  return m.replace(/\/>|>\s*$/i, ` integrity="${match.integrity}" crossorigin="anonymous"$&`);
+  // Strip any existing crossorigin to avoid duplicates, then re-inject with explicit value
+  const stripCrossorigin = (s) => s.replace(/\s*\bcrossorigin(?:=(?:"[^"]*"|'[^']*'|\S+))?\b/gi, '');
+  const cleanAttrs = stripCrossorigin(attrs).trim();
+  return `<link ${cleanAttrs} integrity="${match.integrity}" crossorigin="anonymous">`;
 });
 
 fs.writeFileSync(indexPath, html, 'utf8');
