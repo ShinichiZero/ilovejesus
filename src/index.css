@@ -1,10 +1,41 @@
 @import "tailwindcss";
 
+/* Self-hosted font faces: place WOFF2 files in `public/fonts/`.
+   Recommended files:
+     public/fonts/PlayfairDisplay-Variable.woff2
+     public/fonts/CormorantGaramond-Variable.woff2
+
+   You must add the actual font files to `public/fonts/` before building.
+*/
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('/fonts/PlayfairDisplay-Variable.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url('/fonts/CormorantGaramond-Variable.woff2') format('woff2');
+  font-weight: 300 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 @layer base {
+  :root {
+    --gold: #8B5A00; /* Accessible gold for text/controls */
+    --gold-light: #B8860B; /* Decorative lighter gold */
+    --gold-wash: #E3C28E; /* Very light gold for shimmer */
+  }
+
   html {
-    font-family: 'Georgia', 'Times New Roman', serif;
+    font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
     scroll-behavior: smooth;
   }
+
   body {
     @apply bg-white text-gray-800;
   }
@@ -18,11 +49,11 @@
 .gold-shimmer {
   background: linear-gradient(
     90deg,
-    #E3C28E 0%,
+    var(--gold-wash) 0%,
     #fff8ec 25%,
-    #f5d89a 50%,
+    var(--gold-light) 50%,
     #fff8ec 75%,
-    #E3C28E 100%
+    var(--gold-wash) 100%
   );
   background-size: 200% auto;
   -webkit-background-clip: text;
