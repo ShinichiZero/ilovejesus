@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white text-gray-800;
+  }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.gold-shimmer {
+  background: linear-gradient(
+    90deg,
+    #E3C28E 0%,
+    #fff8ec 25%,
+    #f5d89a 50%,
+    #fff8ec 75%,
+    #E3C28E 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 4s linear infinite;
+}
+
+.shimmer-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 30%, rgba(227,194,142,0.18) 0%, transparent 70%);
+  animation: shimmer-pulse 3s ease-in-out infinite;
+}
+
+@keyframes shimmer-pulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+
+.light-wash {
+  animation: lightWash 0.7s ease-out forwards;
+}
+
+@keyframes lightWash {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
