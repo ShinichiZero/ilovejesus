@@ -3,7 +3,9 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
   plugins: [react(), tailwindcss()],
-  base: process.env.NODE_ENV === 'production' ? '/ilovejesus/' : '/',
-})
+  // Use a relative base in production so built files resolve when served
+  // from a subpath (GitHub Pages) and also work with local previews.
+  base: mode === 'production' ? './' : '/',
+}))

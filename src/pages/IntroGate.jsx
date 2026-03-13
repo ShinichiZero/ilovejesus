@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
@@ -16,6 +16,16 @@ export default function IntroGate() {
       navigate('/home');
     }, 900);
   };
+
+  // Allow pressing Enter (keyboard) to trigger the enter action
+  useEffect(() => {
+    if (entering) return;
+    const onKeyDown = (e) => {
+      if (e.key === 'Enter') handleEnter();
+    };
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, [entering]);
 
   return (
     <AnimatePresence>
