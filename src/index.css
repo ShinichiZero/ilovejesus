@@ -73,6 +73,7 @@
   inset: 0;
   background: radial-gradient(ellipse at 50% 30%, rgba(227,194,142,0.18) 0%, transparent 70%);
   animation: shimmer-pulse 3s ease-in-out infinite;
+  pointer-events: none;
 }
 
 @keyframes shimmer-pulse {
