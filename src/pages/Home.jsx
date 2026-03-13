@@ -23,7 +23,7 @@ export default function Home() {
     >
       <Navbar />
 
-      <main className="flex-1 flex flex-col items-center justify-center px-6 pt-24 pb-12 text-center">
+      <main id="main-content" className="flex-1 flex flex-col items-center justify-center px-6 pt-24 pb-12 text-center">
         {/* Decorative cross */}
         <motion.div
           initial={{ opacity: 0, scale: 0.7 }}

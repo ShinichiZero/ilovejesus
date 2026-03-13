@@ -13,7 +13,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-[#E3C28E]/20">
+    <nav role="navigation" aria-label="Main navigation" className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-[#E3C28E]/20">
       <div className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
         <Link
           to="/home"
@@ -31,6 +31,7 @@ export default function Navbar() {
                   ? 'text-[#E3C28E]'
                   : 'text-gray-500 hover:text-[#E3C28E]'
               }`}
+              aria-current={location.pathname === link.to ? 'page' : undefined}
             >
               {link.label}
             </Link>

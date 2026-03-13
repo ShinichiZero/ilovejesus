@@ -26,5 +26,11 @@ function AnimatedRoutes() {
 }
 
 export default function App() {
-  return <AnimatedRoutes />;
+  return (
+    <>
+      {/* Skip link for screen readers and keyboard users */}
+      <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 bg-white/90 p-2 rounded">Skip to content</a>
+      <AnimatedRoutes />
+    </>
+  );
 }

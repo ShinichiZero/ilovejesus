@@ -40,6 +40,7 @@ export default function IntroGate() {
       ) : (
         <motion.div
           key="gate"
+          id="main-content"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -67,6 +68,8 @@ export default function IntroGate() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1.2, delay: 0.4 }}
             className="max-w-2xl font-serif text-xl md:text-2xl leading-relaxed text-gray-700 italic mb-12"
+            role="region"
+            aria-live="polite"
           >
             {t('intro.dedication')}
           </motion.p>
@@ -77,6 +80,7 @@ export default function IntroGate() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.0 }}
             onClick={handleEnter}
+            aria-label={t('intro.enter')}
             className="px-10 py-3 border border-[#E3C28E] text-[#E3C28E] font-serif text-sm tracking-[0.3em] uppercase hover:bg-[#E3C28E]/10 transition-all duration-300 rounded-sm"
           >
             {t('intro.enter')}
