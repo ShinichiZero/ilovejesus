@@ -318,24 +318,24 @@ export default function Miracles() {
               {/* Miracle number */}
               <div className="flex items-center justify-between mb-3">
                 <span className="text-[#E3C28E]/50 text-xs font-serif tracking-widest uppercase">
-                  Miracle {miracle.id}
+                  {t('miracles.miracleNumber', { num: miracle.id, defaultValue: `Miracle ${miracle.id}` })}
                 </span>
                 <span className="text-[#E3C28E]/30 text-sm select-none">✦</span>
               </div>
 
               {/* Title */}
               <h3 className="font-serif text-base text-gray-800 mb-4 leading-snug">
-                {miracle.title}
+                {t(`miracles.items.${miracle.id}.title`, { defaultValue: miracle.title })}
               </h3>
 
               {/* Quote */}
               <blockquote className="font-serif text-sm text-[#E3C28E] italic leading-relaxed mb-3 border-l-2 border-[#E3C28E]/30 pl-3">
-                {miracle.quote}
+                {t(`miracles.items.${miracle.id}.quote`, { defaultValue: miracle.quote })}
               </blockquote>
 
               {/* Reference */}
               <p className="text-xs text-gray-400 font-serif tracking-wide text-right">
-                — {miracle.reference}
+                — {t(`miracles.items.${miracle.id}.reference`, { defaultValue: miracle.reference })}
               </p>
             </motion.div>
           ))}
