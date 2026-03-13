@@ -70,6 +70,8 @@
   .dark .text-gray-700 { color: var(--muted); }
   .dark .text-gray-800 { color: var(--text); }
   .dark .bg-white { background: transparent; }
+  /* Also cover Tailwind's opacity modifiers like `bg-white/90`, `bg-white/10`, etc. */
+  .dark [class*="bg-white"] { background: transparent !important; }
 }
 
 @keyframes shimmer {
