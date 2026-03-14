@@ -103,6 +103,18 @@ export default function Home() {
           >
             {t('home.exploreSacroCuore')}
           </Link>
+          <Link
+            to="/san-michele"
+            className="px-8 py-3 border border-[#E3C28E]/70 text-[#E3C28E] font-serif text-sm tracking-[0.2em] uppercase hover:bg-[#E3C28E]/10 transition-all duration-300 rounded-sm"
+          >
+            {t('home.exploreSanMichele')}
+          </Link>
+          <Link
+            to="/rosario"
+            className="px-8 py-3 bg-[#E3C28E]/10 border border-[#E3C28E] text-[#E3C28E] font-serif text-sm tracking-[0.2em] uppercase hover:bg-[#E3C28E]/20 transition-all duration-300 rounded-sm"
+          >
+            {t('home.exploreRosario')}
+          </Link>
         </motion.div>
       </main>
 

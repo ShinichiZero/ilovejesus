@@ -12,6 +12,8 @@ export default function Navbar() {
     { to: '/miracles', label: t('nav.miracles') },
     { to: '/divina-misericordia', label: t('nav.divinaMisericordia') },
     { to: '/sacro-cuore', label: t('nav.sacroCuore') },
+    { to: '/san-michele', label: t('nav.sanMichele') },
+    { to: '/rosario', label: t('nav.rosario') },
   ];
 
   return (
@@ -23,7 +25,7 @@ export default function Navbar() {
         >
           ✝
         </Link>
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-4 overflow-x-auto">
           {links.map((link) => (
             <Link
               key={link.to}

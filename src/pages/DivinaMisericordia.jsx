@@ -1,4 +1,5 @@
-import { motion } from 'framer-motion';
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
@@ -12,9 +13,12 @@ const pageVariants = {
 
 export default function DivinaMisericordia() {
   const { t } = useTranslation();
+  const [openPrayerIdx, setOpenPrayerIdx] = useState(null);
 
   const chapletSteps = t('divinaMisericordia.chaplet.steps', { returnObjects: true });
   const promises = t('divinaMisericordia.promises', { returnObjects: true });
+  const fullPrayers = t('divinaMisericordia.chapletFullPrayers.list', { returnObjects: true });
+  const jpiiParagraphs = t('divinaMisericordia.jpiiPrayer.paragraphs', { returnObjects: true });
 
   return (
     <motion.div
@@ -178,7 +182,7 @@ export default function DivinaMisericordia() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.5 }}
-          className="mb-12"
+          className="mb-10"
           aria-labelledby="promises-heading"
         >
           <div className="flex items-center gap-3 mb-4">
@@ -193,6 +197,81 @@ export default function DivinaMisericordia() {
                 <span className="text-[#E3C28E]/60 text-xs mt-1 select-none">✦</span>
                 <p className="font-serif text-gray-600 text-sm leading-relaxed">{p}</p>
               </div>
+            ))}
+          </div>
+        </motion.section>
+
+        {/* Section: Full Chaplet Prayer Texts */}
+        <motion.section
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.52 }}
+          className="mb-10"
+          aria-labelledby="full-prayers-heading"
+        >
+          <div className="flex items-center gap-3 mb-4">
+            <span className="text-[#E3C28E] text-lg select-none">📖</span>
+            <h2 id="full-prayers-heading" className="font-serif text-xl text-gray-800">
+              {t('divinaMisericordia.chapletFullPrayers.sectionTitle')}
+            </h2>
+          </div>
+          <div className="space-y-2">
+            {Array.isArray(fullPrayers) && fullPrayers.map((prayer, i) => (
+              <div key={prayer.id} className="border border-[#E3C28E]/25 rounded-lg overflow-hidden">
+                <button
+                  onClick={() => setOpenPrayerIdx(openPrayerIdx === i ? null : i)}
+                  className="w-full flex items-center justify-between px-5 py-3 bg-white hover:bg-[#E3C28E]/5 transition-colors duration-200 text-left"
+                  aria-expanded={openPrayerIdx === i}
+                >
+                  <span className="font-serif text-gray-700 text-sm md:text-base font-medium">{prayer.title}</span>
+                  <span className="text-[#E3C28E] text-sm ml-4 flex-shrink-0 transition-transform duration-200" style={{ transform: openPrayerIdx === i ? 'rotate(90deg)' : 'rotate(0deg)' }}>▶</span>
+                </button>
+                <AnimatePresence initial={false}>
+                  {openPrayerIdx === i && (
+                    <motion.div
+                      key="content"
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: 'auto', opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.3, ease: 'easeInOut' }}
+                      className="overflow-hidden"
+                    >
+                      <p className="font-serif text-gray-600 text-sm leading-relaxed italic px-5 py-4 bg-[#FDFAF5] border-t border-[#E3C28E]/15">
+                        {prayer.text}
+                      </p>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+            ))}
+          </div>
+        </motion.section>
+
+        {/* Section: JPII Act of Entrustment */}
+        <motion.section
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.54 }}
+          className="mb-12 bg-white border border-[#E3C28E]/30 rounded-lg p-8 shadow-sm"
+          aria-labelledby="jpii-heading"
+        >
+          <div className="text-center mb-6">
+            <span className="text-[#E3C28E] text-2xl select-none">✝</span>
+            <h2 id="jpii-heading" className="font-serif text-xl text-gray-800 mt-3 mb-1">
+              {t('divinaMisericordia.jpiiPrayer.title')}
+            </h2>
+            <p className="font-serif text-[#E3C28E] text-xs tracking-widest uppercase">
+              {t('divinaMisericordia.jpiiPrayer.subtitle')}
+            </p>
+          </div>
+          <p className="font-serif text-gray-500 text-xs italic text-center mb-6">
+            {t('divinaMisericordia.jpiiPrayer.intro')}
+          </p>
+          <div className="border-l-2 border-[#E3C28E]/40 pl-5 space-y-3">
+            {Array.isArray(jpiiParagraphs) && jpiiParagraphs.map((para, i) => (
+              <p key={i} className="font-serif text-gray-700 leading-relaxed text-sm md:text-base italic">
+                {para}
+              </p>
             ))}
           </div>
         </motion.section>

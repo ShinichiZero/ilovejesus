@@ -8,6 +8,8 @@ import Life from './pages/Life';
 const Miracles = lazy(() => import('./pages/Miracles'));
 const DivinaMisericordia = lazy(() => import('./pages/DivinaMisericordia'));
 const SacroCuore = lazy(() => import('./pages/SacroCuore'));
+const SanMichele = lazy(() => import('./pages/SanMichele'));
+const Rosario = lazy(() => import('./pages/Rosario'));
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -22,6 +24,8 @@ function AnimatedRoutes() {
           <Route path="/miracles" element={<Miracles />} />
           <Route path="/divina-misericordia" element={<DivinaMisericordia />} />
           <Route path="/sacro-cuore" element={<SacroCuore />} />
+          <Route path="/san-michele" element={<SanMichele />} />
+          <Route path="/rosario" element={<Rosario />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Suspense>

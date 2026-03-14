@@ -11,6 +11,8 @@ const resources = {
         miracles: 'Miracles on Earth',
         divinaMisericordia: 'Divine Mercy',
         sacroCuore: 'Sacred Heart',
+        sanMichele: 'St. Michael',
+        rosario: 'Rosary',
         language: 'Language',
       },
       // Intro Gate
@@ -28,6 +30,8 @@ const resources = {
         exploreMiracles: 'Explore His Miracles',
         exploreDivinaMisericordia: 'Divine Mercy',
         exploreSacroCuore: 'Sacred Heart',
+        exploreSanMichele: 'Saint Michael',
+        exploreRosario: 'The Rosary',
       },
       // Life Page
       life: {
@@ -166,6 +170,57 @@ const resources = {
         },
         backHome: 'Back to Home',
         toSacroCuore: 'Sacred Heart →',
+        chapletFullPrayers: {
+          sectionTitle: 'Complete Liturgical Texts',
+          list: [
+            {
+              id: 'signOfCross',
+              title: 'Sign of the Cross',
+              text: 'In the name of the Father, and of the Son, and of the Holy Spirit. Amen.',
+            },
+            {
+              id: 'ourFather',
+              title: 'Our Father (Pater Noster)',
+              text: 'Our Father, who art in heaven, hallowed be Thy name; Thy kingdom come; Thy will be done on earth as it is in heaven. Give us this day our daily bread; and forgive us our trespasses as we forgive those who trespass against us; and lead us not into temptation, but deliver us from evil. Amen.',
+            },
+            {
+              id: 'hailMary',
+              title: 'Hail Mary (Ave Maria)',
+              text: 'Hail Mary, full of grace. The Lord is with thee. Blessed art thou among women, and blessed is the fruit of thy womb, Jesus. Holy Mary, Mother of God, pray for us sinners, now and at the hour of our death. Amen.',
+            },
+            {
+              id: 'apostlesCreed',
+              title: "Apostles' Creed (Symbolum Apostolorum)",
+              text: "I believe in God, the Father Almighty, Creator of Heaven and earth; and in Jesus Christ, His only Son, our Lord, who was conceived by the Holy Spirit, born of the Virgin Mary, suffered under Pontius Pilate, was crucified, died, and was buried. He descended into hell; the third day He rose again from the dead; He ascended into Heaven, and sitteth at the right hand of God, the Father Almighty; from thence He shall come to judge the living and the dead. I believe in the Holy Spirit, the Holy Catholic Church, the Communion of Saints, the forgiveness of sins, the resurrection of the body, and life everlasting. Amen.",
+            },
+            {
+              id: 'eternalFather',
+              title: 'Large Bead Prayer',
+              text: 'Eternal Father, I offer You the Body and Blood, Soul and Divinity of Your dearly beloved Son, Our Lord Jesus Christ, in atonement for our sins and those of the whole world.',
+            },
+            {
+              id: 'sorrowfulPassion',
+              title: 'Small Bead Prayer',
+              text: 'For the sake of His sorrowful Passion, have mercy on us and on the whole world.',
+            },
+            {
+              id: 'holyGod',
+              title: 'Closing Doxology (3 times)',
+              text: 'Holy God, Holy Mighty One, Holy Immortal One, have mercy on us and on the whole world.',
+            },
+          ],
+        },
+        jpiiPrayer: {
+          title: 'Act of Entrustment to Divine Mercy',
+          subtitle: 'St. John Paul II · Kraków-Łagiewniki, 17 August 2002',
+          intro: 'This prayer was composed and recited by Pope John Paul II during his visit to the Shrine of Divine Mercy in Kraków, entrusting all humanity to God\'s mercy:',
+          paragraphs: [
+            'God, merciful Father, in Your Son Jesus Christ You have revealed Your love and poured it out upon us in the Holy Spirit, the Comforter.',
+            'We entrust to You today the destiny of the world and of every man and woman.',
+            'Bend down to us sinners, heal our weakness, conquer all evil, and grant that all the inhabitants of the earth may experience Your mercy, in order to find in You, the Triune God, the source of hope.',
+            'Eternal Father, for the sake of the sorrowful Passion of Your Son, and of His Resurrection full of glory, have mercy on us and on the whole world! Amen.',
+          ],
+        },
       },
       // Sacred Heart Page
       sacroCuore: {
@@ -216,6 +271,142 @@ const resources = {
         backHome: 'Back to Home',
         toDivinaMisericordia: '← Divine Mercy',
       },
+      // Saint Michael the Archangel Page
+      sanMichele: {
+        title: 'Saint Michael the Archangel',
+        subtitle: 'Defender of the Church · Prince of the Heavenly Host',
+        history: {
+          title: 'The Archangel Michael',
+          text1: "Saint Michael is one of the three Archangels named in Sacred Scripture (the others being Gabriel and Raphael). His name in Hebrew — מִיכָאֵל, Mikaʾel — means \"Who is like God?\", a battle cry of defiance against Lucifer's pride. He appears in the Old Testament (Daniel 10:13; 12:1), the New Testament (Jude 1:9; Revelation 12:7), and is venerated throughout the universal Church.",
+          text2: 'In Catholic Tradition, Saint Michael holds four principal roles: warrior who defeated Lucifer in the heavenly battle; protector of the Church against spiritual enemies; guardian of God\'s people especially at the hour of death; and weigher of souls at the Last Judgment. His feast day is 29 September (Michaelmas), celebrated together with the Archangels Gabriel and Raphael.',
+        },
+        shortPrayer: {
+          title: 'Prayer to Saint Michael the Archangel',
+          label: 'Standard version — composed for recitation after Low Mass by Pope Leo XIII (1886)',
+          text: 'Saint Michael the Archangel, defend us in battle. Be our protection against the wickedness and snares of the devil; may God rebuke him, we humbly pray; and do thou, O Prince of the Heavenly Host, by the power of God, cast into hell Satan and all evil spirits who wander through the world seeking the ruin of souls. Amen.',
+        },
+        longPrayer: {
+          title: 'The Full Prayer of Pope Leo XIII',
+          label: 'Complete version — written in 1886 following a mystical vision',
+          paragraphs: [
+            'O Glorious Prince of the Heavenly Host, Saint Michael the Archangel, defend us in the battle and in the terrible warfare that we are waging against the principalities and powers, against the rulers of this world of darkness, against the evil spirits. Come to the aid of man, whom Almighty God created immortal, made in His own image and likeness, and redeemed at a great price from the tyranny of Satan.',
+            'Fight this day the battle of the Lord, together with the holy angels, as already thou hast fought the leader of the proud angels, Lucifer, and his apostate host, who were powerless to resist thee, nor was there place for them any longer in Heaven. That cruel, ancient serpent, who is called the devil or Satan, who seduces the whole world, was cast into the abyss with his angels.',
+            'Behold, this primeval enemy and slayer of men has taken courage. Transformed into an angel of light, he wanders about with all the multitude of wicked spirits, invading the earth in order to blot out the name of God and of His Christ, to seize upon, slay and cast into eternal perdition souls destined for the crown of eternal glory.',
+            'This wicked dragon pours out the venom of his malice on men of depraved mind and corrupt heart, the spirit of lying, of impiety, of blasphemy, and the pestilent breath of impurity, and of every vice and iniquity.',
+            'Arise then, O invincible Prince, bring help against the attacks of the lost spirits to the people of God, and give them the victory. They venerate thee as their protector and patron; in thee holy Church glories as her defense against the malicious power of hell; to thee has God entrusted the souls of men to be established in heavenly beatitude.',
+            'Oh, pray to the God of peace that He may put Satan under our feet, so far conquered that he may no longer be able to hold men in captivity and harm the Church. Offer our prayers in the sight of the Most High, so that they may quickly find mercy in the sight of the Lord; and vanquishing the dragon, the ancient serpent who is the devil and Satan, do thou again make him captive in the abyss, so that he may no longer seduce the nations. Amen. Thus be it!',
+          ],
+        },
+        backHome: 'Back to Home',
+        toRosario: 'The Rosary →',
+      },
+      // Rosary Page
+      rosario: {
+        title: 'The Holy Rosary',
+        subtitle: 'A Simple Step-by-Step Guide',
+        intro: 'The Rosary is a meditative prayer uniting vocal prayer with contemplation of the mysteries of Jesus and Mary. It consists of 5 decades — each preceded by the Our Father, followed by 10 Hail Marys, the Glory Be, and the Fatima Prayer.',
+        tabs: {
+          guide: 'Step-by-Step Guide',
+          mysteries: 'The Mysteries',
+          prayers: 'The Prayers',
+        },
+        selectMysteriesTitle: 'Select the Mysteries',
+        mysteryTypes: [
+          { id: 'joyful', name: 'Joyful', days: 'Monday & Saturday' },
+          { id: 'sorrowful', name: 'Sorrowful', days: 'Tuesday & Friday' },
+          { id: 'glorious', name: 'Glorious', days: 'Wednesday & Sunday' },
+          { id: 'luminous', name: 'Luminous', days: 'Thursday' },
+        ],
+        mysteries: {
+          joyful: [
+            { title: '1. The Annunciation', text: 'The Archangel Gabriel announces to Mary that she will conceive and bear the Son of God. Mary responds with her fiat: "Let it be done to me according to your word." (Luke 1:26–38)' },
+            { title: '2. The Visitation', text: 'Mary hastens to visit her cousin Elizabeth, who is pregnant with John the Baptist. Elizabeth greets her: "Blessed are you among women, and blessed is the fruit of your womb." (Luke 1:39–45)' },
+            { title: '3. The Nativity', text: 'Jesus Christ is born in a stable in Bethlehem, wrapped in swaddling clothes and laid in a manger. Angels proclaim His birth and shepherds come to adore Him. (Luke 2:1–20)' },
+            { title: '4. The Presentation in the Temple', text: 'Mary and Joseph present Jesus in the Temple. The righteous Simeon takes the Child in his arms and proclaims: "Now, Master, let your servant go in peace." (Luke 2:22–38)' },
+            { title: '5. The Finding in the Temple', text: 'After three days of searching, Mary and Joseph find the twelve-year-old Jesus teaching among the doctors of the Law. He says: "Did you not know that I must be in my Father\'s house?" (Luke 2:41–52)' },
+          ],
+          sorrowful: [
+            { title: '1. The Agony in the Garden', text: 'Jesus prays in the Garden of Gethsemane. In deep anguish, His sweat becomes like drops of blood. He is betrayed by Judas and arrested. (Luke 22:39–53)' },
+            { title: '2. The Scourging at the Pillar', text: 'Jesus is bound to a pillar and scourged by Roman soldiers. He bears this suffering in silence, offering it for the sins of the world. (John 19:1)' },
+            { title: '3. The Crowning with Thorns', text: 'Soldiers press a crown of thorns onto His head and mock Him: "Hail, King of the Jews!" Jesus endures humiliation with divine patience. (Matthew 27:28–30)' },
+            { title: '4. The Carrying of the Cross', text: 'Jesus carries His Cross along the Via Dolorosa to Golgotha, meeting His Mother and Simon of Cyrene who helps Him along the way. (Luke 23:26–32)' },
+            { title: '5. The Crucifixion and Death', text: 'Jesus is crucified at Golgotha. Darkness falls over the land. At the ninth hour He gives up His spirit. The veil of the Temple is torn in two. (Luke 23:33–46)' },
+          ],
+          glorious: [
+            { title: '1. The Resurrection', text: 'On the third day, the tomb is found empty. An angel announces: "He is not here; He has risen!" Jesus appears to Mary Magdalene and the disciples. Death is conquered forever. (Luke 24:1–12)' },
+            { title: '2. The Ascension', text: 'Forty days after His Resurrection, Jesus ascends into Heaven from the Mount of Olives, promising to send the Holy Spirit and to return in glory. (Acts 1:9–11)' },
+            { title: '3. The Descent of the Holy Spirit', text: 'On Pentecost, the Holy Spirit descends upon Mary and the Apostles as tongues of fire. They are filled with divine power and proclaim the Gospel to all nations. (Acts 2:1–4)' },
+            { title: '4. The Assumption of Mary', text: 'At the end of her earthly life, the Blessed Virgin Mary is assumed body and soul into heavenly glory, anticipating the resurrection of all the faithful.' },
+            { title: '5. The Coronation of Mary', text: "The Blessed Virgin Mary is crowned Queen of Heaven and Earth by her Son Jesus Christ. She reigns at His side and intercedes for all humanity before God's throne." },
+          ],
+          luminous: [
+            { title: '1. The Baptism of Jesus', text: 'Jesus is baptized by John in the Jordan. The heavens open, the Holy Spirit descends as a dove, and the Father\'s voice proclaims: "This is my beloved Son, with whom I am well pleased." (Matthew 3:13–17)' },
+            { title: '2. The Wedding at Cana', text: 'At Mary\'s intercession, Jesus performs His first miracle: He changes water into wine, manifesting His glory and leading His disciples to believe in Him. (John 2:1–12)' },
+            { title: '3. The Proclamation of the Kingdom', text: 'Jesus proclaims: "Repent, for the Kingdom of Heaven is at hand." He calls the world to conversion, healing the sick and forgiving sins. (Mark 1:14–15)' },
+            { title: '4. The Transfiguration', text: 'On Mount Tabor, Jesus is transfigured before Peter, James and John. His face shines like the sun. The Father\'s voice says: "This is my beloved Son — listen to Him." (Matthew 17:1–8)' },
+            { title: '5. The Institution of the Eucharist', text: 'At the Last Supper, Jesus consecrates bread and wine into His Body and Blood, and commands: "Do this in memory of me." The Eucharist is instituted forever. (Luke 22:14–20)' },
+          ],
+        },
+        guide: {
+          title: 'How to Pray the Rosary',
+          opening: {
+            title: 'Opening',
+            instruction: 'Hold the Crucifix and begin:',
+            items: ["Sign of the Cross", "Apostles' Creed", "Our Father", "3 Hail Marys (for Faith, Hope and Charity)", "Glory Be"],
+          },
+          decadeLabel: 'Decade',
+          announceMyster: 'Announce the Mystery:',
+          decadeItems: ['Our Father', '10 Hail Marys (while meditating on the mystery)', 'Glory Be', 'Fatima Prayer'],
+          closing: {
+            title: 'Closing',
+            instruction: 'After the 5th decade:',
+            items: ['Hail Holy Queen (Salve Regina)'],
+            closingPrayer: 'O God, whose only-begotten Son, by His life, death and resurrection, has purchased for us the rewards of eternal life; grant, we beseech Thee, that meditating upon these mysteries of the Most Holy Rosary of the Blessed Virgin Mary, we may imitate what they contain and obtain what they promise. Through the same Christ our Lord. Amen.',
+          },
+        },
+        prayers: {
+          sectionTitle: 'Reference: The Prayers',
+          list: [
+            {
+              id: 'signOfCross',
+              title: 'Sign of the Cross',
+              text: 'In the name of the Father, and of the Son, and of the Holy Spirit. Amen.',
+            },
+            {
+              id: 'apostlesCreed',
+              title: "Apostles' Creed",
+              text: "I believe in God, the Father Almighty, Creator of Heaven and earth; and in Jesus Christ, His only Son, our Lord, who was conceived by the Holy Spirit, born of the Virgin Mary, suffered under Pontius Pilate, was crucified, died, and was buried. He descended into hell; the third day He rose again from the dead; He ascended into Heaven, and sitteth at the right hand of God, the Father Almighty; from thence He shall come to judge the living and the dead. I believe in the Holy Spirit, the Holy Catholic Church, the Communion of Saints, the forgiveness of sins, the resurrection of the body, and life everlasting. Amen.",
+            },
+            {
+              id: 'ourFather',
+              title: 'Our Father',
+              text: 'Our Father, who art in heaven, hallowed be Thy name; Thy kingdom come; Thy will be done on earth as it is in heaven. Give us this day our daily bread; and forgive us our trespasses as we forgive those who trespass against us; and lead us not into temptation, but deliver us from evil. Amen.',
+            },
+            {
+              id: 'hailMary',
+              title: 'Hail Mary',
+              text: 'Hail Mary, full of grace. The Lord is with thee. Blessed art thou among women, and blessed is the fruit of thy womb, Jesus. Holy Mary, Mother of God, pray for us sinners, now and at the hour of our death. Amen.',
+            },
+            {
+              id: 'gloryBe',
+              title: 'Glory Be',
+              text: 'Glory be to the Father, and to the Son, and to the Holy Spirit. As it was in the beginning, is now, and ever shall be, world without end. Amen.',
+            },
+            {
+              id: 'fatimaPrayer',
+              title: 'Fatima Prayer',
+              text: 'O my Jesus, forgive us our sins, save us from the fires of hell, lead all souls to Heaven, especially those who are most in need of Thy mercy. Amen.',
+            },
+            {
+              id: 'salveRegina',
+              title: 'Hail Holy Queen (Salve Regina)',
+              text: 'Hail, Holy Queen, Mother of Mercy, our life, our sweetness and our hope! To thee do we cry, poor banished children of Eve. To thee do we send up our sighs, mourning and weeping in this valley of tears. Turn then, most gracious Advocate, thine eyes of mercy toward us; and after this our exile, show unto us the blessed fruit of thy womb, Jesus. O clement, O loving, O sweet Virgin Mary! Pray for us, O holy Mother of God, that we may be worthy of the promises of Christ. Amen.',
+            },
+          ],
+        },
+        backHome: 'Back to Home',
+        toSanMichele: '← Saint Michael',
+      },
     },
   },
   es: {
@@ -226,6 +417,8 @@ const resources = {
         miracles: 'Milagros en la Tierra',
         divinaMisericordia: 'Divina Misericordia',
         sacroCuore: 'Sagrado Corazón',
+        sanMichele: 'San Miguel',
+        rosario: 'Rosario',
         language: 'Idioma',
       },
       intro: {
@@ -242,6 +435,8 @@ const resources = {
         exploreMiracles: 'Explorar Sus Milagros',
         exploreDivinaMisericordia: 'Divina Misericordia',
         exploreSacroCuore: 'Sagrado Corazón',
+        exploreSanMichele: 'San Miguel Arcángel',
+        exploreRosario: 'El Rosario',
       },
       life: {
         title: 'La Vida de Nuestro Señor Jesucristo',
@@ -336,6 +531,8 @@ const resources = {
         miracles: 'Miracula in Terra',
         divinaMisericordia: 'Misericordia Divina',
         sacroCuore: 'Cor Sacrum',
+        sanMichele: 'Sanctus Michael',
+        rosario: 'Rosarium',
         language: 'Lingua',
       },
       intro: {
@@ -352,6 +549,8 @@ const resources = {
         exploreMiracles: 'Miracula Eius Explora',
         exploreDivinaMisericordia: 'Misericordia Divina',
         exploreSacroCuore: 'Cor Sacrum',
+        exploreSanMichele: 'Sanctus Michael',
+        exploreRosario: 'Rosarium',
       },
       life: {
         title: 'Vita Domini Nostri Iesu Christi',
@@ -446,6 +645,8 @@ const resources = {
         miracles: 'Miracoli sulla Terra',
         divinaMisericordia: 'Divina Misericordia',
         sacroCuore: 'Sacro Cuore',
+        sanMichele: 'San Michele',
+        rosario: 'Rosario',
         language: 'Lingua',
       },
       intro: {
@@ -462,6 +663,8 @@ const resources = {
         exploreMiracles: 'Esplora i Suoi Miracoli',
         exploreDivinaMisericordia: 'Divina Misericordia',
         exploreSacroCuore: 'Sacro Cuore',
+        exploreSanMichele: 'San Michele',
+        exploreRosario: 'Il Rosario',
       },
       life: {
         title: 'La Vita del Nostro Signore Gesù Cristo',
@@ -591,6 +794,57 @@ const resources = {
         },
         backHome: 'Torna alla Home',
         toSacroCuore: 'Sacro Cuore →',
+        chapletFullPrayers: {
+          sectionTitle: 'Testi Liturgici Integrali',
+          list: [
+            {
+              id: 'signOfCross',
+              title: 'Segno della Croce',
+              text: 'Nel nome del Padre, del Figlio e dello Spirito Santo. Amen.',
+            },
+            {
+              id: 'ourFather',
+              title: 'Padre Nostro',
+              text: 'Padre Nostro, che sei nei cieli, sia santificato il Tuo nome, venga il Tuo regno, sia fatta la Tua volontà, come in cielo così in terra. Dacci oggi il nostro pane quotidiano, e rimetti a noi i nostri debiti come noi li rimettiamo ai nostri debitori, e non ci indurre in tentazione, ma liberaci dal male. Amen.',
+            },
+            {
+              id: 'hailMary',
+              title: 'Ave Maria',
+              text: "Ave Maria, piena di grazia, il Signore è con Te. Tu sei benedetta fra le donne e benedetto è il frutto del Tuo seno, Gesù. Santa Maria, Madre di Dio, prega per noi peccatori, adesso e nell'ora della nostra morte. Amen.",
+            },
+            {
+              id: 'apostlesCreed',
+              title: 'Credo degli Apostoli',
+              text: "Credo in Dio, Padre Onnipotente, Creatore del cielo e della terra; e in Gesù Cristo, Suo unico Figlio, nostro Signore, il quale fu concepito di Spirito Santo, nacque da Maria Vergine, patì sotto Ponzio Pilato, fu crocifisso, morì e fu sepolto; discese agli inferi; il terzo giorno risorse dai morti; salì al cielo, siede alla destra di Dio Padre Onnipotente; di là verrà a giudicare i vivi e i morti. Credo nello Spirito Santo, la Santa Chiesa Cattolica, la Comunione dei Santi, la remissione dei peccati, la risurrezione della carne, la vita eterna. Amen.",
+            },
+            {
+              id: 'eternalFather',
+              title: 'Preghiera sui grani grandi',
+              text: "Padre Eterno, ti offro il Corpo e il Sangue, l'Anima e la Divinità del tuo dilettissimo Figlio, Nostro Signore Gesù Cristo, in espiazione dei nostri peccati e di quelli del mondo intero.",
+            },
+            {
+              id: 'sorrowfulPassion',
+              title: 'Preghiera sui grani piccoli',
+              text: 'Per la Sua dolorosa Passione, abbi misericordia di noi e del mondo intero.',
+            },
+            {
+              id: 'holyGod',
+              title: 'Dossologia finale (3 volte)',
+              text: 'Santo Dio, Santo Forte, Santo Immortale, abbi pietà di noi e del mondo intero.',
+            },
+          ],
+        },
+        jpiiPrayer: {
+          title: 'Atto di Affidamento alla Divina Misericordia',
+          subtitle: 'San Giovanni Paolo II · Cracovia-Łagiewniki, 17 agosto 2002',
+          intro: 'Questa preghiera fu composta e recitata da Papa Giovanni Paolo II durante la sua visita al Santuario della Divina Misericordia a Cracovia, affidando tutta l\'umanità alla misericordia di Dio:',
+          paragraphs: [
+            'Dio, Padre misericordioso, che nel Tuo Figlio Gesù Cristo hai rivelato il Tuo amore e lo hai effuso su di noi nello Spirito Santo Consolatore,',
+            'a Te affidiamo oggi i destini del mondo e di ogni uomo e donna.',
+            'Piegati su di noi peccatori, guarisci la nostra debolezza, vinci ogni male, fa\' che tutti gli abitanti della terra sperimentino la Tua misericordia, affinché in Te, Dio Trino, trovino sempre la fonte della speranza.',
+            'Padre Eterno, per la dolorosa Passione e la Risurrezione del Tuo Figlio, abbi misericordia di noi e del mondo intero! Amen.',
+          ],
+        },
       },
       sacroCuore: {
         title: 'Il Sacro Cuore di Gesù',
@@ -638,6 +892,140 @@ const resources = {
         backHome: 'Torna alla Home',
         toDivinaMisericordia: '← Divina Misericordia',
       },
+      sanMichele: {
+        title: 'San Michele Arcangelo',
+        subtitle: 'Difensore della Chiesa · Principe della Milizia Celeste',
+        history: {
+          title: "L'Arcangelo Michele",
+          text1: "San Michele è uno dei tre Arcangeli nominati nelle Sacre Scritture (gli altri sono Gabriele e Raffaele). Il suo nome in ebraico — מִיכָאֵל, Mikaʾel — significa «Chi è come Dio?», grido di sfida contro la superbia di Lucifero. Appare nell'Antico Testamento (Daniele 10,13; 12,1), nel Nuovo Testamento (Giuda 1,9; Apocalisse 12,7) ed è venerato in tutta la Chiesa universale.",
+          text2: "Nella Tradizione cattolica, San Michele riveste quattro ruoli fondamentali: guerriero che sconfisse Lucifero nella battaglia celeste; protettore della Chiesa contro i nemici spirituali; custode del popolo di Dio soprattutto nell'ora della morte; e pesatore delle anime nel Giudizio Finale. La sua festa è il 29 settembre (Micheleangelo), celebrata insieme agli Arcangeli Gabriele e Raffaele.",
+        },
+        shortPrayer: {
+          title: 'Preghiera a San Michele Arcangelo',
+          label: 'Versione standard — composta da Papa Leone XIII (1886) per la recita dopo la Messa bassa',
+          text: "San Michele Arcangelo, difendici nella battaglia; sii il nostro aiuto contro la malvagità e le insidie del diavolo. Che Dio lo comandi, ne supplichiamo; e tu, Principe della milizia celeste, con la potenza di Dio, ricaccia nell'inferno Satana e gli altri spiriti maligni che vagano per il mondo per la rovina delle anime. Amen.",
+        },
+        longPrayer: {
+          title: 'La Preghiera Integrale di Papa Leone XIII',
+          label: 'Versione completa — scritta nel 1886 dopo una visione mistica',
+          paragraphs: [
+            "O glorioso principe della milizia celeste, San Michele Arcangelo, difendici nella lotta e nella terribile guerra che combattiamo contro i principati e le potestà, contro i dominatori di questo mondo di tenebre, contro gli spiriti maligni. Vieni in aiuto degli uomini che Dio Onnipotente ha creato immortali, fatti a Sua immagine e somiglianza e redenti a grande prezzo dalla tirannia di Satana.",
+            "Combatti oggi la battaglia del Signore insieme con gli angeli santi, come già combattesti il capo degli angeli superbi, Lucifero, e la sua schiera apostata, che non era potente contro di te, né vi era luogo per loro in cielo. Quel crudele antico serpente che si chiama diavolo o Satana, che seduce il mondo intero, fu precipitato nell'abisso con i suoi angeli.",
+            "Ecco che questo nemico primordiale e uccisore degli uomini ha ripreso coraggio. Trasformatosi in angelo di luce, aggirandosi con la moltitudine degli spiriti malvagi, invade la terra per cancellare il nome di Dio e del Suo Cristo, per sottrarre, uccidere e gettare nella perdizione eterna le anime destinate alla corona della gloria eterna.",
+            "Questo drago malvagio riversa il veleno della sua malizia su uomini dalla mente depravata e dal cuore corrotto: lo spirito della menzogna, dell'empietà, della bestemmia e il respiro pestifero dell'impurità, e di ogni vizio e iniquità.",
+            "Sorgi dunque, o invincibile principe, porta soccorso al popolo di Dio contro gli assalti degli spiriti perduti, e concedi loro la vittoria. Ti venerano come loro protettore e patrono; in te si gloria la santa Chiesa come nella sua difesa contro la potenza malefica dell'inferno; a te Dio ha affidato le anime degli uomini perché le stabilisca nella beatitudine celeste.",
+            "Prega il Dio della pace affinché Satana sia schiacciato sotto i nostri piedi, così da non poter più tenere gli uomini in schiavitù e danneggiare la Chiesa. Presenta le nostre suppliche al cospetto dell'Altissimo, affinché trovino presto misericordia; e vincendo il dragone, l'antico serpente che è il diavolo e Satana, ricaccialo ancora una volta prigioniero nell'abisso, affinché non possa più sedurre le nazioni. Amen. Così sia!",
+          ],
+        },
+        backHome: 'Torna alla Home',
+        toRosario: 'Il Rosario →',
+      },
+      rosario: {
+        title: 'Il Santo Rosario',
+        subtitle: 'Una Guida Semplice Passo-Passo',
+        intro: 'Il Rosario è una preghiera meditativa che unisce la preghiera vocale alla contemplazione dei misteri della vita di Gesù e Maria. Si compone di 5 decine — ciascuna preceduta dal Padre Nostro, seguita da 10 Ave Maria, dal Gloria e dalla Preghiera di Fatima.',
+        tabs: {
+          guide: 'Guida Passo-Passo',
+          mysteries: 'I Misteri',
+          prayers: 'Le Preghiere',
+        },
+        selectMysteriesTitle: 'Scegli i Misteri',
+        mysteryTypes: [
+          { id: 'joyful', name: 'Gaudiosi', days: 'Lunedì e Sabato' },
+          { id: 'sorrowful', name: 'Dolorosi', days: 'Martedì e Venerdì' },
+          { id: 'glorious', name: 'Gloriosi', days: 'Mercoledì e Domenica' },
+          { id: 'luminous', name: 'Luminosi', days: 'Giovedì' },
+        ],
+        mysteries: {
+          joyful: [
+            { title: "1. L'Annunciazione", text: "L'Arcangelo Gabriele annuncia a Maria che concepirà il Figlio di Dio. Maria risponde con il suo fiat: «Si faccia di me secondo la tua parola». (Luca 1,26–38)" },
+            { title: '2. La Visitazione', text: "Maria si reca dalla cugina Elisabetta, incinta di Giovanni Battista. Elisabetta la saluta: «Benedetta tu fra le donne e benedetto il frutto del tuo seno». (Luca 1,39–45)" },
+            { title: '3. La Natività', text: "Gesù Cristo nasce in una stalla a Betlemme, avvolto in fasce e deposto in una mangiatoia. Gli angeli annunciano la nascita e i pastori vengono ad adorarlo. (Luca 2,1–20)" },
+            { title: '4. La Presentazione al Tempio', text: "Maria e Giuseppe presentano Gesù al Tempio. Il giusto Simeone lo prende tra le braccia e proclama: «Ora lascia, o Signore, che il tuo servo vada in pace». (Luca 2,22–38)" },
+            { title: '5. Il Ritrovamento di Gesù al Tempio', text: "Dopo tre giorni di ricerche, Maria e Giuseppe trovano il dodicenne Gesù nel Tempio in mezzo ai dottori. Egli dice: «Non sapevate che io devo occuparmi delle cose del Padre mio?» (Luca 2,41–52)" },
+          ],
+          sorrowful: [
+            { title: "1. L'Agonia nell'Orto", text: "Gesù prega nell'Orto del Getsemani. In profonda angoscia il suo sudore diventa come gocce di sangue. È tradito da Giuda e arrestato. (Luca 22,39–53)" },
+            { title: '2. La Flagellazione', text: "Gesù è legato a una colonna e flagellato dai soldati romani. Sopporta in silenzio, offrendo la sua sofferenza per i peccati del mondo. (Giovanni 19,1)" },
+            { title: "3. L'Incoronazione di Spine", text: "I soldati pongono sul suo capo una corona di spine e lo deridono: «Salve, re dei Giudei!» Gesù sopporta l'umiliazione con pazienza divina. (Matteo 27,28–30)" },
+            { title: '4. La Via Crucis', text: "Gesù porta la Croce lungo la Via Dolorosa verso il Golgota, incontrando sua Madre e Simone di Cirene che lo aiuta. (Luca 23,26–32)" },
+            { title: '5. La Crocifissione e la Morte', text: "Gesù è crocifisso al Golgota. Le tenebre scendono sulla terra. Alla nona ora dà lo spirito. Il velo del Tempio si squarcia in due. (Luca 23,33–46)" },
+          ],
+          glorious: [
+            { title: '1. La Risurrezione', text: "All'alba del terzo giorno il sepolcro è trovato vuoto. Un angelo annuncia: «È risorto!» Gesù appare alla Maddalena e ai discepoli. La morte è vinta per sempre. (Luca 24,1–12)" },
+            { title: "2. L'Ascensione", text: "Quaranta giorni dopo la Risurrezione, Gesù ascende al Cielo dal Monte degli Ulivi davanti ai suoi discepoli, promettendo lo Spirito Santo e il ritorno nella gloria. (Atti 1,9–11)" },
+            { title: '3. La Discesa dello Spirito Santo', text: "A Pentecoste lo Spirito Santo scende su Maria e gli Apostoli come lingue di fuoco. Pieni di potenza divina, iniziano a proclamare il Vangelo alle genti. (Atti 2,1–4)" },
+            { title: "4. L'Assunzione di Maria", text: "Al termine della sua vita terrena, la Beata Vergine Maria è assunta in corpo e anima alla gloria celeste per la potenza di Dio, anticipando la risurrezione di tutti i fedeli." },
+            { title: "5. L'Incoronazione di Maria", text: "La Beata Vergine Maria è incoronata Regina del Cielo e della Terra dal suo Figlio Gesù Cristo. Regna al Suo fianco e intercede per tutta l'umanità davanti al trono di Dio." },
+          ],
+          luminous: [
+            { title: '1. Il Battesimo di Gesù al Giordano', text: "Gesù è battezzato da Giovanni nel Giordano. I cieli si aprono, lo Spirito Santo scende come una colomba e la voce del Padre proclama: «Questi è il mio Figlio diletto». (Matteo 3,13–17)" },
+            { title: '2. Le Nozze di Cana', text: "Per intercessione di Maria, Gesù compie il suo primo miracolo pubblico: trasforma l'acqua in vino, manifestando la sua gloria e portando i discepoli a credere in lui. (Giovanni 2,1–12)" },
+            { title: '3. La Proclamazione del Regno di Dio', text: "Gesù proclama: «Convertitevi, perché il regno dei cieli è vicino». Chiama il mondo alla conversione, guarisce i malati e perdona i peccati. (Marco 1,14–15)" },
+            { title: '4. La Trasfigurazione', text: "Sul Monte Tabor Gesù si trasfigura davanti a Pietro, Giacomo e Giovanni: il suo volto brilla come il sole. La voce del Padre dice: «Questi è il mio Figlio diletto — ascoltatelo». (Matteo 17,1–8)" },
+            { title: "5. L'Istituzione dell'Eucaristia", text: "Nell'Ultima Cena Gesù consacra il pane e il vino nel suo Corpo e nel suo Sangue e ordina: «Fate questo in memoria di me». L'Eucaristia è istituita per sempre. (Luca 22,14–20)" },
+          ],
+        },
+        guide: {
+          title: 'Come Recitare il Rosario',
+          opening: {
+            title: 'Apertura',
+            instruction: 'Tieni il Crocifisso e inizia:',
+            items: ['Segno della Croce', 'Credo degli Apostoli', 'Padre Nostro', '3 Ave Maria (per la Fede, la Speranza e la Carità)', 'Gloria'],
+          },
+          decadeLabel: 'Decina',
+          announceMyster: 'Annuncia il Mistero:',
+          decadeItems: ['Padre Nostro', '10 Ave Maria (meditando il mistero)', 'Gloria', 'Preghiera di Fatima'],
+          closing: {
+            title: 'Chiusura',
+            instruction: 'Dopo la 5ª decina:',
+            items: ['Salve Regina'],
+            closingPrayer: "O Dio, il Tuo Figlio unigenito, con la Sua vita, morte e risurrezione, ci ha meritato il premio della vita eterna; concedi, Te ne supplichiamo, che meditando questi misteri del Santissimo Rosario della Beata Vergine Maria, possiamo imitare ciò che contengono e ottenere ciò che promettono. Per Cristo nostro Signore. Amen.",
+          },
+        },
+        prayers: {
+          sectionTitle: 'Riferimento: Le Preghiere',
+          list: [
+            {
+              id: 'signOfCross',
+              title: 'Segno della Croce',
+              text: 'Nel nome del Padre, del Figlio e dello Spirito Santo. Amen.',
+            },
+            {
+              id: 'apostlesCreed',
+              title: 'Credo degli Apostoli',
+              text: "Credo in Dio, Padre Onnipotente, Creatore del cielo e della terra; e in Gesù Cristo, Suo unico Figlio, nostro Signore, il quale fu concepito di Spirito Santo, nacque da Maria Vergine, patì sotto Ponzio Pilato, fu crocifisso, morì e fu sepolto; discese agli inferi; il terzo giorno risorse dai morti; salì al cielo, siede alla destra di Dio Padre Onnipotente; di là verrà a giudicare i vivi e i morti. Credo nello Spirito Santo, la Santa Chiesa Cattolica, la Comunione dei Santi, la remissione dei peccati, la risurrezione della carne, la vita eterna. Amen.",
+            },
+            {
+              id: 'ourFather',
+              title: 'Padre Nostro',
+              text: "Padre Nostro, che sei nei cieli, sia santificato il Tuo nome, venga il Tuo regno, sia fatta la Tua volontà, come in cielo così in terra. Dacci oggi il nostro pane quotidiano, e rimetti a noi i nostri debiti come noi li rimettiamo ai nostri debitori, e non ci indurre in tentazione, ma liberaci dal male. Amen.",
+            },
+            {
+              id: 'hailMary',
+              title: 'Ave Maria',
+              text: "Ave Maria, piena di grazia, il Signore è con Te. Tu sei benedetta fra le donne e benedetto è il frutto del Tuo seno, Gesù. Santa Maria, Madre di Dio, prega per noi peccatori, adesso e nell'ora della nostra morte. Amen.",
+            },
+            {
+              id: 'gloryBe',
+              title: 'Gloria',
+              text: 'Gloria al Padre, al Figlio e allo Spirito Santo. Come era nel principio, e ora e sempre, nei secoli dei secoli. Amen.',
+            },
+            {
+              id: 'fatimaPrayer',
+              title: 'Preghiera di Fatima',
+              text: "O mio Gesù, perdona i nostri peccati, preservaci dal fuoco dell'inferno, porta in cielo tutte le anime, specialmente quelle che hanno più bisogno della Tua misericordia. Amen.",
+            },
+            {
+              id: 'salveRegina',
+              title: 'Salve Regina',
+              text: "Salve, Regina, Madre di misericordia, vita, dolcezza e speranza nostra, salve. A te ricorriamo, esuli figli di Eva; a te sospiriamo, gementi e piangenti in questa valle di lacrime. Orsù dunque, avvocata nostra, rivolgi a noi gli occhi tuoi misericordiosi. E mostraci, dopo questo esilio, Gesù, il frutto benedetto del tuo seno. O clemente, o pia, o dolce Vergine Maria. Prega per noi, santa Madre di Dio, perché siamo fatti degni delle promesse di Cristo. Amen.",
+            },
+          ],
+        },
+        backHome: 'Torna alla Home',
+        toSanMichele: '← San Michele',
+      },
     },
   },
   de: {
@@ -648,6 +1036,8 @@ const resources = {
         miracles: 'Wunder auf Erden',
         divinaMisericordia: 'Göttliche Barmherzigkeit',
         sacroCuore: 'Heiligstes Herz',
+        sanMichele: 'St. Michael',
+        rosario: 'Rosenkranz',
         language: 'Sprache',
       },
       intro: {
@@ -663,6 +1053,8 @@ const resources = {
         exploreMiracles: 'Seine Wunder erkunden',
         exploreDivinaMisericordia: 'Göttliche Barmherzigkeit',
         exploreSacroCuore: 'Heiligstes Herz',
+        exploreSanMichele: 'St. Michael',
+        exploreRosario: 'Rosenkranz',
       },
       life: {
         title: 'Das Leben Unseres Herrn Jesus Christus',
@@ -752,6 +1144,8 @@ const resources = {
         miracles: 'Miracles sur Terre',
         divinaMisericordia: 'Divine Miséricorde',
         sacroCuore: 'Sacré-Cœur',
+        sanMichele: 'Saint Michel',
+        rosario: 'Rosaire',
         language: 'Langue',
       },
       intro: {
@@ -767,6 +1161,8 @@ const resources = {
         exploreMiracles: 'Explorer Ses Miracles',
         exploreDivinaMisericordia: 'Divine Miséricorde',
         exploreSacroCuore: 'Sacré-Cœur',
+        exploreSanMichele: 'Saint Michel',
+        exploreRosario: 'Le Rosaire',
       },
       life: {
         title: 'La Vie de Notre Seigneur Jésus-Christ',
@@ -856,6 +1252,8 @@ const resources = {
         miracles: '地上の奇跡',
         divinaMisericordia: '神の慈悲',
         sacroCuore: '聖心',
+        sanMichele: '聖ミカエル',
+        rosario: 'ロザリオ',
         language: '言語',
       },
       intro: {
@@ -871,6 +1269,8 @@ const resources = {
         exploreMiracles: 'その奇跡をたどる',
         exploreDivinaMisericordia: '神の慈悲',
         exploreSacroCuore: '聖心',
+        exploreSanMichele: '聖ミカエル',
+        exploreRosario: 'ロザリオ',
       },
       life: {
         title: '我らが主イエス・キリストの生涯',
@@ -966,6 +1366,8 @@ const resources = {
         miracles: '지상의 기적',
         divinaMisericordia: '하느님의 자비',
         sacroCuore: '성심',
+        sanMichele: '성 미카엘',
+        rosario: '묵주기도',
         language: '언어',
       },
       intro: {
@@ -981,6 +1383,8 @@ const resources = {
         exploreMiracles: '그의 기적 보기',
         exploreDivinaMisericordia: '하느님의 자비',
         exploreSacroCuore: '성심',
+        exploreSanMichele: '성 미카엘',
+        exploreRosario: '묵주기도',
       },
       life: {
         title: '우리 주 예수 그리스도의 생애',
