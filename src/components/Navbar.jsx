@@ -10,6 +10,8 @@ export default function Navbar() {
     { to: '/home', label: t('nav.home') },
     { to: '/life', label: t('nav.life') },
     { to: '/miracles', label: t('nav.miracles') },
+    { to: '/divina-misericordia', label: t('nav.divinaMisericordia') },
+    { to: '/sacro-cuore', label: t('nav.sacroCuore') },
   ];
 
   return (

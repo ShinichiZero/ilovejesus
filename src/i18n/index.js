@@ -9,6 +9,8 @@ const resources = {
         home: 'Home',
         life: 'Life',
         miracles: 'Miracles on Earth',
+        divinaMisericordia: 'Divine Mercy',
+        sacroCuore: 'Sacred Heart',
         language: 'Language',
       },
       // Intro Gate
@@ -24,6 +26,8 @@ const resources = {
         welcome: 'Welcome to a sacred space devoted to the life, miracles, and glory of our Lord Jesus Christ.',
         exploreLife: 'Explore His Life',
         exploreMiracles: 'Explore His Miracles',
+        exploreDivinaMisericordia: 'Divine Mercy',
+        exploreSacroCuore: 'Sacred Heart',
       },
       // Life Page
       life: {
@@ -111,6 +115,107 @@ const resources = {
       footer: {
         dedication: 'Dedicated with Love to The King of Kings',
       },
+      // Divine Mercy Page
+      divinaMisericordia: {
+        title: 'Divine Mercy',
+        subtitle: 'Jesus, I Trust in You',
+        promise: '"The souls who spread devotion to My Mercy, I protect through their entire life, and at the hour of death I will not be their Judge but the Merciful Saviour."',
+        promiseSource: '— Jesus to St. Faustina Kowalska (Diary, n. 1075)',
+        imageCaption: 'Image of Merciful Jesus',
+        imageMotto: 'Jesus, I Trust in You',
+        promisesTitle: 'Graces Promised for Devotion to Divine Mercy',
+        promises: [
+          'The soul that trusts in My mercy will be filled with My grace.',
+          'Those who confess their sins and receive Holy Communion on Divine Mercy Sunday will receive complete forgiveness of sin and punishment.',
+          'I will protect every soul that will confide in My Mercy as a mother protects her infant.',
+          'No soul that has approached Me will go unhelped; I desire the salvation of every soul.',
+          'The greater the sinner, the greater the right he has to My Mercy.',
+        ],
+        faustina: {
+          title: 'Saint Faustina Kowalska',
+          text1: 'Helena Kowalska was born on 25 August 1905 in Głogowiec, Poland, the third of ten children. At the age of twenty she entered the Congregation of the Sisters of Our Lady of Mercy in Warsaw, taking the name Sister Maria Faustina.',
+          text2: 'Beginning in 1931, she received extraordinary mystical visions of Jesus Christ, who appeared to her as the "Merciful Jesus" — clothed in white, with two rays of light emanating from His Heart: a pale ray (symbolizing water that justifies souls) and a red ray (symbolizing the Blood that is the life of souls). Jesus asked her to have this image painted with the inscription "Jesus, I Trust in You," to spread the devotion to Divine Mercy, and to record her experiences in a diary.',
+          text3: 'Her "Diary: Divine Mercy in My Soul" is one of the most significant mystical texts of the twentieth century. She died on 5 October 1938 in Kraków. She was beatified by Pope John Paul II in 1993 and canonised on 30 April 2000 — the first Sunday after Easter, which he proclaimed Divine Mercy Sunday for the universal Church.',
+        },
+        hourOfMercy: {
+          title: 'The Hour of Mercy',
+          text1: 'Jesus revealed to Saint Faustina that 3:00 PM is the Hour of Mercy — the hour of His agony on the Cross, when mercy was opened wide for every soul.',
+          text2: '"At three o\'clock, implore My mercy, especially for sinners; and, if only for a brief moment, immerse yourself in My Passion, particularly in My abandonment at the moment of agony. This is the hour of great mercy for the whole world. I will allow you to enter into My mortal sorrow." (Diary, n. 1320)',
+        },
+        chaplet: {
+          title: 'The Chaplet of Divine Mercy',
+          intro: 'Recited on ordinary rosary beads, beginning with the Our Father, Hail Mary and Apostles\' Creed.',
+          steps: [
+            {
+              label: 'Opening (once)',
+              prayer: 'Our Father… Hail Mary… I Believe (Apostles\' Creed)…',
+            },
+            {
+              label: 'On each large bead (5 times)',
+              prayer: 'Eternal Father, I offer You the Body and Blood, Soul and Divinity of Your dearly beloved Son, Our Lord Jesus Christ, in atonement for our sins and those of the whole world.',
+            },
+            {
+              label: 'On each of the 10 small beads (5 decades)',
+              prayer: 'For the sake of His sorrowful Passion, have mercy on us and on the whole world.',
+            },
+            {
+              label: 'Closing (3 times)',
+              prayer: 'Holy God, Holy Mighty One, Holy Immortal One, have mercy on us and on the whole world.',
+            },
+          ],
+        },
+        backHome: 'Back to Home',
+        toSacroCuore: 'Sacred Heart →',
+      },
+      // Sacred Heart Page
+      sacroCuore: {
+        title: 'The Sacred Heart of Jesus',
+        subtitle: 'Symbol of Infinite Love and Reparation',
+        promise: '"I will write indelibly in My Heart the names of those who propagate this devotion, and I will never blot them out."',
+        promiseSource: '— Jesus to St. Margaret Mary Alacoque',
+        imageCaption: 'Image of the Sacred Heart of Jesus',
+        imageMotto: 'Sacred Heart of Jesus, I Trust in You',
+        twelvePromises: {
+          title: 'The Twelve Promises of the Sacred Heart',
+          intro: 'Promised by Our Lord Jesus Christ to Saint Margaret Mary Alacoque (1647–1690)',
+          list: [
+            'I will give peace to their families.',
+            'I will console them in all their troubles.',
+            'I will be their secure refuge during life and especially at the hour of death.',
+            'I will bless every place where an image of My Heart shall be exposed and honoured.',
+            'I will give to their hearts the strength needed to rise from a state of mediocrity and tepidity.',
+            'I will give them all the graces necessary for their state of life.',
+            'I will render tepid souls fervent.',
+            'I will cause fervent souls to advance rapidly to great perfection.',
+            'I will bless places in which My Heart is exposed and honoured with greater abundance.',
+            'I will give to priests the power of touching the most hardened hearts.',
+            'Those who propagate this devotion shall have their names written in My Heart, and they shall never be blotted out.',
+            'I promise you in the excessive mercy of My Heart that its all-powerful love will grant to all those who communicate on the First Friday of nine consecutive months the grace of final perseverance; they shall not die in My displeasure, nor without receiving their Sacraments; My Divine Heart shall be their safe refuge in this last moment.',
+          ],
+        },
+        firstFridays: {
+          title: 'The Practice of the Nine First Fridays',
+          text1: 'Our Lord promised to Saint Margaret Mary Alacoque the grace of final perseverance to those who receive Holy Communion on the First Friday of nine consecutive months.',
+          text2: 'To fulfil this practice worthily: go to Confession (around the First Friday), receive Holy Communion on the First Friday with the specific intention of making reparation to the Sacred Heart of Jesus, and spend a moment in prayer and adoration.',
+          text3: 'This devotion unites us intimately with the Heart of Jesus, who loves us with a perfect and infinite love, and desires above all our salvation and sanctification.',
+        },
+        consecration: {
+          title: 'Act of Consecration to the Sacred Heart',
+          intro: 'Traditional prayer of consecration to the Sacred Heart of Jesus:',
+          text: [
+            'Most sweet Jesus, Redeemer of the human race, look down upon us humbly prostrate before Thine altar.',
+            'We are Thine, and Thine we wish to be; but to be more surely united with Thee, behold each one of us freely consecrates himself today to Thy most Sacred Heart.',
+            'Many indeed have never known Thee; many too, despising Thy precepts, have rejected Thee. Have mercy on them all, most merciful Jesus, and draw them to Thy sacred Heart.',
+            'Be Thou King, O Lord, not only of the faithful who have never forsaken Thee, but also of the prodigal children who have abandoned Thee; grant that they may quickly return to their Father\'s house lest they die of wretchedness and hunger.',
+            'Be Thou King of those who are deceived by erroneous opinions, or whom discord keeps aloof; call them back to the harbor of truth and unity of faith, so that there may be but one flock and one Shepherd.',
+            'Be Thou King of all those who are still involved in the darkness of idolatry or of Islamism, and refuse not to draw them into the light and kingdom of God.',
+            'Turn Thine eyes of mercy towards the children of that race, once Thy chosen people; of old they called down upon themselves the Blood of the Savior; may it now descend upon them a laver of redemption and of life.',
+            'Grant, O Lord, to Thy Church assurance of freedom and immunity from harm; give peace and order to all nations, and make the earth resound from pole to pole with one cry: Praise be to the divine Heart that wrought our salvation; to it be glory and honor for ever and ever. Amen.',
+          ],
+        },
+        backHome: 'Back to Home',
+        toDivinaMisericordia: '← Divine Mercy',
+      },
     },
   },
   es: {
@@ -119,6 +224,8 @@ const resources = {
         home: 'Inicio',
         life: 'Vida',
         miracles: 'Milagros en la Tierra',
+        divinaMisericordia: 'Divina Misericordia',
+        sacroCuore: 'Sagrado Corazón',
         language: 'Idioma',
       },
       intro: {
@@ -133,6 +240,8 @@ const resources = {
           'Bienvenido a un espacio sagrado dedicado a la vida, los milagros y la gloria de nuestro Señor Jesucristo.',
         exploreLife: 'Explorar Su Vida',
         exploreMiracles: 'Explorar Sus Milagros',
+        exploreDivinaMisericordia: 'Divina Misericordia',
+        exploreSacroCuore: 'Sagrado Corazón',
       },
       life: {
         title: 'La Vida de Nuestro Señor Jesucristo',
@@ -225,6 +334,8 @@ const resources = {
         home: 'Domus',
         life: 'Vita',
         miracles: 'Miracula in Terra',
+        divinaMisericordia: 'Misericordia Divina',
+        sacroCuore: 'Cor Sacrum',
         language: 'Lingua',
       },
       intro: {
@@ -239,6 +350,8 @@ const resources = {
           'Salve in hoc loco sacro vitae, miraculis et gloriae Domini nostri Iesu Christi dedicato.',
         exploreLife: 'Vita Eius Explora',
         exploreMiracles: 'Miracula Eius Explora',
+        exploreDivinaMisericordia: 'Misericordia Divina',
+        exploreSacroCuore: 'Cor Sacrum',
       },
       life: {
         title: 'Vita Domini Nostri Iesu Christi',
@@ -331,6 +444,8 @@ const resources = {
         home: 'Home',
         life: 'Vita',
         miracles: 'Miracoli sulla Terra',
+        divinaMisericordia: 'Divina Misericordia',
+        sacroCuore: 'Sacro Cuore',
         language: 'Lingua',
       },
       intro: {
@@ -345,6 +460,8 @@ const resources = {
           'Benvenuto in uno spazio sacro dedicato alla vita, ai miracoli e alla gloria del nostro Signore Gesù Cristo.',
         exploreLife: 'Esplora la Sua Vita',
         exploreMiracles: 'Esplora i Suoi Miracoli',
+        exploreDivinaMisericordia: 'Divina Misericordia',
+        exploreSacroCuore: 'Sacro Cuore',
       },
       life: {
         title: 'La Vita del Nostro Signore Gesù Cristo',
@@ -424,6 +541,103 @@ const resources = {
       footer: {
         dedication: "Dedicato con Amore al Re dei Re",
       },
+      divinaMisericordia: {
+        title: 'Divina Misericordia',
+        subtitle: 'Gesù, confido in Te',
+        promise: '«Le anime che diffondono il culto della Mia Misericordia, le proteggo per tutta la vita come una tenera madre protegge il suo bimbo, e nell\'ora della morte non sarò per loro Giudice, ma Salvatore misericordioso.»',
+        promiseSource: '— Gesù a Santa Faustina Kowalska (Diario, n. 1075)',
+        imageCaption: 'Immagine di Gesù Misericordioso',
+        imageMotto: 'Gesù, confido in Te',
+        promisesTitle: 'Grazie promesse per la devozione alla Divina Misericordia',
+        promises: [
+          "L'anima che si fida della Mia misericordia sarà ricolmata della Mia grazia.",
+          'Coloro che si confessano e ricevono la Santa Comunione nella Domenica della Divina Misericordia ricevono il completo perdono dei peccati e delle pene.',
+          'Proteggerò ogni anima che si affida alla Mia misericordia come una madre protegge il suo bambino.',
+          'Nessuna anima che si sia avvicinata a Me resterà senza aiuto; desidero la salvezza di ogni anima.',
+          'Quanto più grande è il peccatore, tanto maggiore è il suo diritto alla Mia misericordia.',
+        ],
+        faustina: {
+          title: 'Santa Faustina Kowalska',
+          text1: 'Elena Kowalska nacque il 25 agosto 1905 a Głogowiec, in Polonia, terza di dieci figli. A vent\'anni entrò nella Congregazione delle Suore di Nostra Signora della Misericordia a Varsavia, prendendo il nome di Suor Maria Faustina.',
+          text2: 'A partire dal 1931 ricevette straordinarie visioni mistiche di Gesù Cristo, che le apparve come "Gesù Misericordioso" — vestito di bianco, con due raggi di luce che emanavano dal Suo Cuore: un raggio pallido (simbolo dell\'acqua che giustifica le anime) e un raggio rosso (simbolo del Sangue che è vita delle anime). Gesù le chiese di far dipingere quell\'immagine con la scritta "Gesù, confido in Te", di diffondere la devozione alla Divina Misericordia e di raccogliere le sue esperienze in un diario.',
+          text3: 'Il suo "Diario: La Divina Misericordia nell\'anima mia" è uno dei testi mistici più significativi del Novecento. Morì il 5 ottobre 1938 a Cracovia. Fu beatificata da Papa Giovanni Paolo II nel 1993 e canonizzata il 30 aprile 2000 — la prima domenica dopo Pasqua, che egli proclamò Domenica della Divina Misericordia per la Chiesa universale.',
+        },
+        hourOfMercy: {
+          title: "L'Ora della Misericordia",
+          text1: 'Gesù rivelò a Santa Faustina che le ore 15:00 sono l\'Ora della Misericordia — l\'ora della Sua agonia sulla Croce, quando la misericordia fu aperta a ogni anima.',
+          text2: '«Alle tre del pomeriggio implora la Mia misericordia, specialmente per i peccatori; e, anche solo per un breve istante, immergiti nella Mia Passione, soprattutto nel Mio abbandono nell\'ora dell\'agonia. Questa è l\'ora della grande misericordia per il mondo intero.» (Diario, n. 1320)',
+        },
+        chaplet: {
+          title: 'La Coroncina alla Divina Misericordia',
+          intro: 'Si recita su una normale corona del Rosario, iniziando con il Padre Nostro, l\'Ave Maria e il Credo.',
+          steps: [
+            {
+              label: 'Introduzione (una volta)',
+              prayer: 'Padre Nostro… Ave Maria… Credo…',
+            },
+            {
+              label: 'Su ogni grano grande (5 volte)',
+              prayer: 'Padre Eterno, ti offro il Corpo e il Sangue, l\'Anima e la Divinità del tuo dilettissimo Figlio, Nostro Signore Gesù Cristo, in espiazione dei nostri peccati e di quelli del mondo intero.',
+            },
+            {
+              label: 'Su ogni grano piccolo (5 decine da 10)',
+              prayer: 'Per la Sua dolorosa Passione, abbi misericordia di noi e del mondo intero.',
+            },
+            {
+              label: 'Conclusione (3 volte)',
+              prayer: 'Santo Dio, Santo Forte, Santo Immortale, abbi pietà di noi e del mondo intero.',
+            },
+          ],
+        },
+        backHome: 'Torna alla Home',
+        toSacroCuore: 'Sacro Cuore →',
+      },
+      sacroCuore: {
+        title: 'Il Sacro Cuore di Gesù',
+        subtitle: 'Simbolo di Amore Infinito e Riparazione',
+        promise: '«Scriverò indelebilmente nel mio Cuore i nomi delle persone che divulgheranno questa devozione e non li cancellerò mai.»',
+        promiseSource: '— Gesù a Santa Margherita Maria Alacoque',
+        imageCaption: 'Immagine del Sacro Cuore di Gesù',
+        imageMotto: 'Sacro Cuore di Gesù, mi fido di Te',
+        twelvePromises: {
+          title: 'Le Dodici Promesse del Sacro Cuore',
+          intro: 'Promesse fatte da Nostro Signore Gesù Cristo a Santa Margherita Maria Alacoque (1647–1690)',
+          list: [
+            'Darò loro tutta la pace nelle loro famiglie.',
+            'Li consolerò in tutte le loro pene.',
+            'Sarò il loro rifugio durante la vita e soprattutto nell\'ora della morte.',
+            'Benedirò ogni luogo dove sarà esposta ed onorata l\'immagine del mio Sacro Cuore.',
+            'Darò ad essi il fervore necessario per elevarsi dallo stato di tiepidezza e mediocrità.',
+            'Darò loro tutte le grazie necessarie al loro stato di vita.',
+            'Renderò i cuori tiepidi ardenti.',
+            'Le anime ferventi perverranno in breve ad un\'alta perfezione.',
+            'Benedirò con abbondanza ogni luogo dove sarà esposta ed onorata l\'immagine del mio Sacro Cuore.',
+            'Darò ai sacerdoti il potere di toccare i cuori più induriti.',
+            'Scriverò indelebilmente nel mio Cuore i nomi di coloro che divulgheranno questa devozione.',
+            'A coloro che si comunicheranno per nove Primi Venerdì del mese consecutivi, darò la grazia della perseveranza finale; non moriranno nella mia disgrazia, né senza ricevere i Sacramenti; il mio Cuore divino sarà il loro sicuro rifugio nell\'ultimo momento.',
+          ],
+        },
+        firstFridays: {
+          title: 'La Pratica dei Primi Venerdì del Mese',
+          text1: 'Nostro Signore promise a Santa Margherita Maria Alacoque la grazia della perseveranza finale a coloro che si comunicano per nove Primi Venerdì del mese consecutivi.',
+          text2: 'Per compiere degnamente questa pratica: accostarsi alla Confessione (in prossimità del Primo Venerdì), ricevere la Santa Comunione il Primo Venerdì con l\'intenzione specifica di riparare le offese al Sacro Cuore di Gesù, e trascorrere un momento di preghiera e adorazione.',
+          text3: 'Questa devozione ci unisce intimamente al Cuore di Gesù, che ci ama con un amore perfetto e infinito e desidera sopra ogni cosa la nostra salvezza e santificazione.',
+        },
+        consecration: {
+          title: 'Atto di Consacrazione al Sacro Cuore',
+          intro: 'Preghiera tradizionale di consacrazione al Sacro Cuore di Gesù:',
+          text: [
+            'Dolcissimo Gesù, Redentore del genere umano, guardaci prostrati umilmente dinanzi al Tuo altare.',
+            'Tuoi siamo e Tuoi vogliamo essere; e per essere più solidamente uniti a Te, ecco che oggi ognuno di noi si consacra liberamente al Tuo Sacratissimo Cuore.',
+            'Molti non Ti hanno mai conosciuto; molti altri, disprezzando i Tuoi precetti, Ti hanno ripudiato. Abbi pietà di tutti, o Gesù misericordiosissimo, e attirali al Tuo Sacro Cuore.',
+            'Sii Re, o Signore, non solo dei fedeli che non si sono mai allontanati da Te, ma anche dei figli prodighi che Ti hanno abbandonato; fa\' che tornino presto alla casa del Padre loro, perché non muoiano di miseria e di fame.',
+            'Sii Re di coloro che sono ingannati dall\'errore, o che la discordia tiene lontani da Te; riconducili al porto della verità e all\'unità della fede, affinché vi sia un solo gregge e un solo Pastore.',
+            'Concedi, o Signore, alla Tua Chiesa sicurezza e libertà; dona pace e ordine a tutte le nazioni, e fa\' che dalla terra si levi un solo grido: Lode al Cuore divino che ci ha redenti; a Lui gloria ed onore nei secoli dei secoli. Amen.',
+          ],
+        },
+        backHome: 'Torna alla Home',
+        toDivinaMisericordia: '← Divina Misericordia',
+      },
     },
   },
   de: {
@@ -432,6 +646,8 @@ const resources = {
         home: 'Start',
         life: 'Leben',
         miracles: 'Wunder auf Erden',
+        divinaMisericordia: 'Göttliche Barmherzigkeit',
+        sacroCuore: 'Heiligstes Herz',
         language: 'Sprache',
       },
       intro: {
@@ -445,6 +661,8 @@ const resources = {
         welcome: 'Willkommen in einem heiligen Raum, der dem Leben, den Wundern und der Herrlichkeit unseres Herrn Jesus Christus gewidmet ist.',
         exploreLife: 'Sein Leben erkunden',
         exploreMiracles: 'Seine Wunder erkunden',
+        exploreDivinaMisericordia: 'Göttliche Barmherzigkeit',
+        exploreSacroCuore: 'Heiligstes Herz',
       },
       life: {
         title: 'Das Leben Unseres Herrn Jesus Christus',
@@ -532,6 +750,8 @@ const resources = {
         home: 'Accueil',
         life: 'Vie',
         miracles: 'Miracles sur Terre',
+        divinaMisericordia: 'Divine Miséricorde',
+        sacroCuore: 'Sacré-Cœur',
         language: 'Langue',
       },
       intro: {
@@ -545,6 +765,8 @@ const resources = {
         welcome: 'Bienvenue dans un espace sacré dédié à la vie, aux miracles et à la gloire de notre Seigneur Jésus-Christ.',
         exploreLife: 'Explorer Sa Vie',
         exploreMiracles: 'Explorer Ses Miracles',
+        exploreDivinaMisericordia: 'Divine Miséricorde',
+        exploreSacroCuore: 'Sacré-Cœur',
       },
       life: {
         title: 'La Vie de Notre Seigneur Jésus-Christ',
@@ -632,6 +854,8 @@ const resources = {
         home: 'ホーム',
         life: '生涯',
         miracles: '地上の奇跡',
+        divinaMisericordia: '神の慈悲',
+        sacroCuore: '聖心',
         language: '言語',
       },
       intro: {
@@ -645,6 +869,8 @@ const resources = {
         welcome: '主イエス・キリストの生涯、奇跡、栄光に捧げられた聖なる空間へようこそ。',
         exploreLife: 'その生涯をたどる',
         exploreMiracles: 'その奇跡をたどる',
+        exploreDivinaMisericordia: '神の慈悲',
+        exploreSacroCuore: '聖心',
       },
       life: {
         title: '我らが主イエス・キリストの生涯',
@@ -738,6 +964,8 @@ const resources = {
         home: '홈',
         life: '생애',
         miracles: '지상의 기적',
+        divinaMisericordia: '하느님의 자비',
+        sacroCuore: '성심',
         language: '언어',
       },
       intro: {
@@ -751,6 +979,8 @@ const resources = {
         welcome: '우리 주 예수 그리스도의 삶과 기적과 영광을 기리는 거룩한 공간에 오신 것을 환영합니다.',
         exploreLife: '그의 생애 보기',
         exploreMiracles: '그의 기적 보기',
+        exploreDivinaMisericordia: '하느님의 자비',
+        exploreSacroCuore: '성심',
       },
       life: {
         title: '우리 주 예수 그리스도의 생애',
