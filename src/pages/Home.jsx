@@ -77,7 +77,7 @@ export default function Home() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.9 }}
-          className="flex flex-col sm:flex-row gap-4"
+          className="flex flex-col sm:flex-row gap-4 flex-wrap justify-center"
         >
           <Link
             to="/life"
@@ -90,6 +90,30 @@ export default function Home() {
             className="px-8 py-3 bg-[#E3C28E]/10 border border-[#E3C28E] text-[#E3C28E] font-serif text-sm tracking-[0.2em] uppercase hover:bg-[#E3C28E]/20 transition-all duration-300 rounded-sm"
           >
             {t('home.exploreMiracles')}
+          </Link>
+          <Link
+            to="/divina-misericordia"
+            className="px-8 py-3 border border-[#E3C28E]/70 text-[#E3C28E] font-serif text-sm tracking-[0.2em] uppercase hover:bg-[#E3C28E]/10 transition-all duration-300 rounded-sm"
+          >
+            {t('home.exploreDivinaMisericordia')}
+          </Link>
+          <Link
+            to="/sacro-cuore"
+            className="px-8 py-3 border border-[#C0392B]/30 text-[#C0392B]/70 font-serif text-sm tracking-[0.2em] uppercase hover:bg-[#C0392B]/5 transition-all duration-300 rounded-sm"
+          >
+            {t('home.exploreSacroCuore')}
+          </Link>
+          <Link
+            to="/san-michele"
+            className="px-8 py-3 border border-[#E3C28E]/70 text-[#E3C28E] font-serif text-sm tracking-[0.2em] uppercase hover:bg-[#E3C28E]/10 transition-all duration-300 rounded-sm"
+          >
+            {t('home.exploreSanMichele')}
+          </Link>
+          <Link
+            to="/rosario"
+            className="px-8 py-3 bg-[#E3C28E]/10 border border-[#E3C28E] text-[#E3C28E] font-serif text-sm tracking-[0.2em] uppercase hover:bg-[#E3C28E]/20 transition-all duration-300 rounded-sm"
+          >
+            {t('home.exploreRosario')}
           </Link>
         </motion.div>
       </main>
